@@ -1,6 +1,7 @@
 import * as mongoose from 'mongoose';
 import { NotificationFrequency } from '../data/user-preferences-dto';
 
+
 export const UserPreferenceSchema = new mongoose.Schema({
   userId: { type: String, required: true, unique: true },
   email: { type: String, required: true },

@@ -15,6 +15,9 @@ interface NotificationPayload {
 
 @Injectable()
 export class NotificationService {
+  send(arg0: { userId: string; type: string; channel: string; content: { subject: string; body: string; }; }): any {
+    throw new Error('Method not implemented.');
+  }
   private readonly logger = new Logger(NotificationService.name);
 
   constructor(
